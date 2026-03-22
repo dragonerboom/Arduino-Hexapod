@@ -92,20 +92,6 @@ double Zlevel;
 bool started = false;
 uint8_t stepA = 12, stepB = 6;
 
-void setup() {
-  // CONFIGURATION FOR RECTANGULAR CHASSIS
-  
-  // Format: (J1_Pin, J1_Inv, J1_Off, J2_Pin, J2_Inv, J2_Off, J3_Pin, J3_Inv, J3_Off)
-  legs[0].setup(1,     false,       0,     2,   true,      0,      3,  false,      0); // Front Left
-  legs[1].setup(4,     false,       0,     5,   true,      6,     25,  false,      0); // Middle Left
-  legs[2].setup(7,     false,       0,     8,   true,      0,      9,  false,      0); // Back Left
-  legs[3].setup(10,     true,       0,    23,  false,      0,     16,   true,      0); // Front Right
-  legs[4].setup(17,     true,       0,    18,  false,      0,     19,  false,      0); // Middle Right
-  legs[5].setup(15,     true,       0,     4,  false,      0,     16,   true,      0); // Back Right
-
-  delay(2000);
-}
-
 void MotionControl() {
   // 1. Update Ramps
   double ax = AXTar.update(), ay = AYTar.update(), az = AZTar.update();
@@ -160,6 +146,20 @@ void MotionControl() {
 
     started = true;
   }
+}
+
+void setup() {
+  // CONFIGURATION FOR RECTANGULAR CHASSIS
+  
+  // Format: (J1_Pin, J1_Inv, J1_Off, J2_Pin, J2_Inv, J2_Off, J3_Pin, J3_Inv, J3_Off)
+  legs[0].setup(1,     false,       0,     2,   true,      0,      3,  false,      0); // Front Left
+  legs[1].setup(4,     false,       0,     5,   true,      6,     25,  false,      0); // Middle Left
+  legs[2].setup(7,     false,       0,     8,   true,      0,      9,  false,      0); // Back Left
+  legs[3].setup(10,     true,       0,    23,  false,      0,     16,   true,      0); // Front Right
+  legs[4].setup(17,     true,       0,    18,  false,      0,     19,  false,      0); // Middle Right
+  legs[5].setup(15,     true,       0,     4,  false,      0,     16,   true,      0); // Back Right
+
+  delay(2000);
 }
 
 void loop() {
