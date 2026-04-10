@@ -45,7 +45,6 @@ class UnifiedLeg {
     };
 
     InternalJoint j1, j2, j3;
-    double _mountingAngle;
 
   public:
     void setup(uint8_t p1, bool i1, int8_t o1, uint8_t p2, bool i2, int8_t o2, uint8_t p3, bool i3, int8_t o3) {
