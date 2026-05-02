@@ -10,7 +10,7 @@ const double L_TIBIA = 110.0; // J3L
 
 const double Y_REST = 80.0;   // Neutral distance from body
 const double Z_REST = -90.0;  // Standing height
-const double TIBIA_OFFSET_ANGLE = 15.4; 
+const double TIBIA_OFFSET_ANGLE = 0; 
 
 // ########################################## UNIFIED LEG CLASS
 class UnifiedLeg {
@@ -89,9 +89,19 @@ class UnifiedLeg {
 
 // ########################################## GAIT SETTINGS
 const double walkSteps[13][2] = {
-    {0.0, 0.0}, {-0.2, 0.0}, {-0.6, 0.0}, {-1.0, 0.0},  // Stance
-    {-0.8, 15.0}, {-0.4, 25.0}, {0.0, 30.0}, {0.4, 25.0}, // Swing
-    {0.8, 15.0}, {1.0, 0.0}, {0.6, 0.0}, {0.3, 0.0}, {0.0, 0.0}
+    {0.0, 0.0}, 
+    {-0.2, 0.0}, 
+    {-0.6, 0.0}, 
+    {-1.0, 0.0},  // Stance
+    {-0.8, 15.0}, 
+    {-0.4, 25.0}, 
+    {0.0, 30.0}, 
+    {0.4, 25.0}, // Swing
+    {0.8, 15.0}, 
+    {1.0, 0.0}, 
+    {0.6, 0.0}, 
+    {0.3, 0.0}, 
+    {0.0, 0.0}
 };
 
 UnifiedLeg legs[6];
