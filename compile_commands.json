@@ -150,79 +150,61 @@
         "output": ".pio/build/megaatmega2560/FrameworkArduino/wiring_shift.c.o"
     },
     {
-        "command": "/home/bill/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/lib6ad/Servo/avr/Servo.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/megaatmega2560/Servo/src -I/home/bill/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/bill/.platformio/packages/framework-arduino-avr/variants/mega .pio/libdeps/megaatmega2560/Servo/src/avr/Servo.cpp",
-        "directory": "/home/bill/Documents/PlatformIO/Projects/Hexapod",
-        "file": ".pio/libdeps/megaatmega2560/Servo/src/avr/Servo.cpp",
-        "output": ".pio/build/megaatmega2560/lib6ad/Servo/avr/Servo.cpp.o"
-    },
-    {
-        "command": "/home/bill/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/lib6ad/Servo/esp32/Servo.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/megaatmega2560/Servo/src -I/home/bill/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/bill/.platformio/packages/framework-arduino-avr/variants/mega .pio/libdeps/megaatmega2560/Servo/src/esp32/Servo.cpp",
-        "directory": "/home/bill/Documents/PlatformIO/Projects/Hexapod",
-        "file": ".pio/libdeps/megaatmega2560/Servo/src/esp32/Servo.cpp",
-        "output": ".pio/build/megaatmega2560/lib6ad/Servo/esp32/Servo.cpp.o"
-    },
-    {
-        "command": "/home/bill/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/lib6ad/Servo/mbed/Servo.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/megaatmega2560/Servo/src -I/home/bill/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/bill/.platformio/packages/framework-arduino-avr/variants/mega .pio/libdeps/megaatmega2560/Servo/src/mbed/Servo.cpp",
-        "directory": "/home/bill/Documents/PlatformIO/Projects/Hexapod",
-        "file": ".pio/libdeps/megaatmega2560/Servo/src/mbed/Servo.cpp",
-        "output": ".pio/build/megaatmega2560/lib6ad/Servo/mbed/Servo.cpp.o"
-    },
-    {
-        "command": "/home/bill/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/lib6ad/Servo/megaavr/Servo.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/megaatmega2560/Servo/src -I/home/bill/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/bill/.platformio/packages/framework-arduino-avr/variants/mega .pio/libdeps/megaatmega2560/Servo/src/megaavr/Servo.cpp",
-        "directory": "/home/bill/Documents/PlatformIO/Projects/Hexapod",
-        "file": ".pio/libdeps/megaatmega2560/Servo/src/megaavr/Servo.cpp",
-        "output": ".pio/build/megaatmega2560/lib6ad/Servo/megaavr/Servo.cpp.o"
-    },
-    {
-        "command": "/home/bill/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/lib6ad/Servo/nrf52/Servo.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/megaatmega2560/Servo/src -I/home/bill/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/bill/.platformio/packages/framework-arduino-avr/variants/mega .pio/libdeps/megaatmega2560/Servo/src/nrf52/Servo.cpp",
-        "directory": "/home/bill/Documents/PlatformIO/Projects/Hexapod",
-        "file": ".pio/libdeps/megaatmega2560/Servo/src/nrf52/Servo.cpp",
-        "output": ".pio/build/megaatmega2560/lib6ad/Servo/nrf52/Servo.cpp.o"
-    },
-    {
-        "command": "/home/bill/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/lib6ad/Servo/renesas/Servo.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/megaatmega2560/Servo/src -I/home/bill/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/bill/.platformio/packages/framework-arduino-avr/variants/mega .pio/libdeps/megaatmega2560/Servo/src/renesas/Servo.cpp",
-        "directory": "/home/bill/Documents/PlatformIO/Projects/Hexapod",
-        "file": ".pio/libdeps/megaatmega2560/Servo/src/renesas/Servo.cpp",
-        "output": ".pio/build/megaatmega2560/lib6ad/Servo/renesas/Servo.cpp.o"
-    },
-    {
-        "command": "/home/bill/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/lib6ad/Servo/sam/Servo.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/megaatmega2560/Servo/src -I/home/bill/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/bill/.platformio/packages/framework-arduino-avr/variants/mega .pio/libdeps/megaatmega2560/Servo/src/sam/Servo.cpp",
-        "directory": "/home/bill/Documents/PlatformIO/Projects/Hexapod",
-        "file": ".pio/libdeps/megaatmega2560/Servo/src/sam/Servo.cpp",
-        "output": ".pio/build/megaatmega2560/lib6ad/Servo/sam/Servo.cpp.o"
-    },
-    {
-        "command": "/home/bill/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/lib6ad/Servo/samd/Servo.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/megaatmega2560/Servo/src -I/home/bill/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/bill/.platformio/packages/framework-arduino-avr/variants/mega .pio/libdeps/megaatmega2560/Servo/src/samd/Servo.cpp",
-        "directory": "/home/bill/Documents/PlatformIO/Projects/Hexapod",
-        "file": ".pio/libdeps/megaatmega2560/Servo/src/samd/Servo.cpp",
-        "output": ".pio/build/megaatmega2560/lib6ad/Servo/samd/Servo.cpp.o"
-    },
-    {
-        "command": "/home/bill/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/lib6ad/Servo/stm32f4/Servo.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/megaatmega2560/Servo/src -I/home/bill/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/bill/.platformio/packages/framework-arduino-avr/variants/mega .pio/libdeps/megaatmega2560/Servo/src/stm32f4/Servo.cpp",
-        "directory": "/home/bill/Documents/PlatformIO/Projects/Hexapod",
-        "file": ".pio/libdeps/megaatmega2560/Servo/src/stm32f4/Servo.cpp",
-        "output": ".pio/build/megaatmega2560/lib6ad/Servo/stm32f4/Servo.cpp.o"
-    },
-    {
-        "command": "/home/bill/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/lib6ad/Servo/xmc/Servo.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/megaatmega2560/Servo/src -I/home/bill/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/bill/.platformio/packages/framework-arduino-avr/variants/mega .pio/libdeps/megaatmega2560/Servo/src/xmc/Servo.cpp",
-        "directory": "/home/bill/Documents/PlatformIO/Projects/Hexapod",
-        "file": ".pio/libdeps/megaatmega2560/Servo/src/xmc/Servo.cpp",
-        "output": ".pio/build/megaatmega2560/lib6ad/Servo/xmc/Servo.cpp.o"
-    },
-    {
-        "command": "/home/bill/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/lib6ad/Servo/zephyr/Servo.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/megaatmega2560/Servo/src -I/home/bill/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/bill/.platformio/packages/framework-arduino-avr/variants/mega .pio/libdeps/megaatmega2560/Servo/src/zephyr/Servo.cpp",
-        "directory": "/home/bill/Documents/PlatformIO/Projects/Hexapod",
-        "file": ".pio/libdeps/megaatmega2560/Servo/src/zephyr/Servo.cpp",
-        "output": ".pio/build/megaatmega2560/lib6ad/Servo/zephyr/Servo.cpp.o"
-    },
-    {
         "command": "/home/bill/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/libf38/Ramp/Ramp.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/megaatmega2560/Ramp/src -I/home/bill/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/bill/.platformio/packages/framework-arduino-avr/variants/mega .pio/libdeps/megaatmega2560/Ramp/src/Ramp.cpp",
         "directory": "/home/bill/Documents/PlatformIO/Projects/Hexapod",
         "file": ".pio/libdeps/megaatmega2560/Ramp/src/Ramp.cpp",
         "output": ".pio/build/megaatmega2560/libf38/Ramp/Ramp.cpp.o"
     },
     {
-        "command": "/home/bill/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/src/main.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -Isrc -I.pio/libdeps/megaatmega2560/Ramp/src -I.pio/libdeps/megaatmega2560/Servo/src -I/home/bill/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/bill/.platformio/packages/framework-arduino-avr/variants/mega src/main.cpp",
+        "command": "/home/bill/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/libc23/Wire/Wire.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/bill/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/bill/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/bill/.platformio/packages/framework-arduino-avr/variants/mega /home/bill/.platformio/packages/framework-arduino-avr/libraries/Wire/src/Wire.cpp",
+        "directory": "/home/bill/Documents/PlatformIO/Projects/Hexapod",
+        "file": "/home/bill/.platformio/packages/framework-arduino-avr/libraries/Wire/src/Wire.cpp",
+        "output": ".pio/build/megaatmega2560/libc23/Wire/Wire.cpp.o"
+    },
+    {
+        "command": "/home/bill/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/megaatmega2560/libc23/Wire/utility/twi.c.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/bill/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/bill/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/bill/.platformio/packages/framework-arduino-avr/variants/mega /home/bill/.platformio/packages/framework-arduino-avr/libraries/Wire/src/utility/twi.c",
+        "directory": "/home/bill/Documents/PlatformIO/Projects/Hexapod",
+        "file": "/home/bill/.platformio/packages/framework-arduino-avr/libraries/Wire/src/utility/twi.c",
+        "output": ".pio/build/megaatmega2560/libc23/Wire/utility/twi.c.o"
+    },
+    {
+        "command": "/home/bill/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/lib9ae/SPI/SPI.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/home/bill/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/bill/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/bill/.platformio/packages/framework-arduino-avr/variants/mega /home/bill/.platformio/packages/framework-arduino-avr/libraries/SPI/src/SPI.cpp",
+        "directory": "/home/bill/Documents/PlatformIO/Projects/Hexapod",
+        "file": "/home/bill/.platformio/packages/framework-arduino-avr/libraries/SPI/src/SPI.cpp",
+        "output": ".pio/build/megaatmega2560/lib9ae/SPI/SPI.cpp.o"
+    },
+    {
+        "command": "/home/bill/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/lib6b1/Adafruit BusIO/Adafruit_BusIO_Register.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/Adafruit BusIO\" -I/home/bill/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/bill/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/bill/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/bill/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_BusIO_Register.cpp\"",
+        "directory": "/home/bill/Documents/PlatformIO/Projects/Hexapod",
+        "file": ".pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_BusIO_Register.cpp",
+        "output": ".pio/build/megaatmega2560/lib6b1/Adafruit BusIO/Adafruit_BusIO_Register.cpp.o"
+    },
+    {
+        "command": "/home/bill/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/lib6b1/Adafruit BusIO/Adafruit_GenericDevice.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/Adafruit BusIO\" -I/home/bill/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/bill/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/bill/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/bill/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_GenericDevice.cpp\"",
+        "directory": "/home/bill/Documents/PlatformIO/Projects/Hexapod",
+        "file": ".pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_GenericDevice.cpp",
+        "output": ".pio/build/megaatmega2560/lib6b1/Adafruit BusIO/Adafruit_GenericDevice.cpp.o"
+    },
+    {
+        "command": "/home/bill/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/lib6b1/Adafruit BusIO/Adafruit_I2CDevice.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/Adafruit BusIO\" -I/home/bill/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/bill/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/bill/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/bill/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_I2CDevice.cpp\"",
+        "directory": "/home/bill/Documents/PlatformIO/Projects/Hexapod",
+        "file": ".pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_I2CDevice.cpp",
+        "output": ".pio/build/megaatmega2560/lib6b1/Adafruit BusIO/Adafruit_I2CDevice.cpp.o"
+    },
+    {
+        "command": "/home/bill/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/lib6b1/Adafruit BusIO/Adafruit_SPIDevice.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/Adafruit BusIO\" -I/home/bill/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/bill/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/bill/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/bill/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_SPIDevice.cpp\"",
+        "directory": "/home/bill/Documents/PlatformIO/Projects/Hexapod",
+        "file": ".pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_SPIDevice.cpp",
+        "output": ".pio/build/megaatmega2560/lib6b1/Adafruit BusIO/Adafruit_SPIDevice.cpp.o"
+    },
+    {
+        "command": "/home/bill/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o \".pio/build/megaatmega2560/lib434/Adafruit PWM Servo Driver Library/Adafruit_PWMServoDriver.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 \"-I.pio/libdeps/megaatmega2560/Adafruit PWM Servo Driver Library\" \"-I.pio/libdeps/megaatmega2560/Adafruit BusIO\" -I/home/bill/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/bill/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I/home/bill/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/bill/.platformio/packages/framework-arduino-avr/variants/mega \".pio/libdeps/megaatmega2560/Adafruit PWM Servo Driver Library/Adafruit_PWMServoDriver.cpp\"",
+        "directory": "/home/bill/Documents/PlatformIO/Projects/Hexapod",
+        "file": ".pio/libdeps/megaatmega2560/Adafruit PWM Servo Driver Library/Adafruit_PWMServoDriver.cpp",
+        "output": ".pio/build/megaatmega2560/lib434/Adafruit PWM Servo Driver Library/Adafruit_PWMServoDriver.cpp.o"
+    },
+    {
+        "command": "/home/bill/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/megaatmega2560/src/main.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega2560 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_MEGA2560 -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -Isrc \"-I.pio/libdeps/megaatmega2560/Adafruit PWM Servo Driver Library\" \"-I.pio/libdeps/megaatmega2560/Adafruit BusIO\" -I/home/bill/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/home/bill/.platformio/packages/framework-arduino-avr/libraries/Wire/src -I.pio/libdeps/megaatmega2560/Ramp/src -I/home/bill/.platformio/packages/framework-arduino-avr/cores/arduino -I/home/bill/.platformio/packages/framework-arduino-avr/variants/mega src/main.cpp",
         "directory": "/home/bill/Documents/PlatformIO/Projects/Hexapod",
         "file": "src/main.cpp",
         "output": ".pio/build/megaatmega2560/src/main.cpp.o"
