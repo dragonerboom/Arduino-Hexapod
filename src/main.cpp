@@ -64,9 +64,10 @@ class UnifiedLeg {
       posZ.go(tz, duration);
     }
 
-    bool isMoving() {
-      return !posX.isFinished() || !posY.isFinished() || !posZ.isFinished();
+    bool isNotMoving() {
+      return posX.isFinished() && posY.isFinished() && posZ.isFinished();
     }
+    
 
     void tick() {
       double curX = posX.update();
@@ -103,7 +104,7 @@ class UnifiedLeg {
       j3.update(J3_A);
     }
 };
-
+UnifiedLeg legs[6];
 Adafruit_PWMServoDriver boardLeft = Adafruit_PWMServoDriver(0x40);
 Adafruit_PWMServoDriver boardRight = Adafruit_PWMServoDriver(0x41);
 // ########################################## GAIT SETTINGS
@@ -122,8 +123,8 @@ const double walkSteps[13][2] = {
     {0.3, 0.0}, 
     {0.0, 0.0}
 };
-
-UnifiedLeg legs[6];
+//Variables
+bool allStationary;
 uint8_t stepA = 0, stepB = 6;
 uint32_t walkSpeed = 80;
 
@@ -145,7 +146,16 @@ void loop() {
   for (int i = 0; i < 6; i++) legs[i].tick();
 
   // 2. Gait Sequence Trigger
-  if (!legs[0].isMoving()) {
+
+  allStationary = true;
+  for (int i = 0; i < 6; i++) {
+    if (!legs[i].isNotMoving()) {
+        allStationary = false;
+        break; // Stop checking immediately if one leg is moving
+    }
+  }
+
+  if (allStationary) {
     // Only continue if stick is pushed OR we aren't back to neutral (0)
     if (stickMag > 0.1 || stepA != 0) {
       stepA = (stepA >= 12) ? 0 : stepA + 1;
@@ -157,13 +167,27 @@ void loop() {
 
       for (int i = 0; i < 6; i++) {
         // Simple rotation: Add offset to Y based on rotation variable
-        // (Outer legs move more in local space to create body rotation)
         double rotOffset = (i < 3) ? -rotation : rotation; 
-        
+        /*   0        1
+              ↖️-+-↗️
+           2--⬅️-+-➡️--3
+              ↙️-+-↘️
+             4       5
+        */
+        //Group A
+        legs[0].setTarget(tX * walkSteps[stepA][0], (tY + rotOffset) * walkSteps[stepA][0], walkSteps[stepA][1], walkSpeed);
+        legs[3].setTarget(tX * walkSteps[stepA][0], (tY + rotOffset) * walkSteps[stepA][0], walkSteps[stepA][1], walkSpeed);
+        legs[4].setTarget(tX * walkSteps[stepA][0], (tY + rotOffset) * walkSteps[stepA][0], walkSteps[stepA][1], walkSpeed);
+        //Group B
+        legs[1].setTarget(tX * walkSteps[stepB][0], (tY + rotOffset) * walkSteps[stepB][0], walkSteps[stepB][1], walkSpeed);
+        legs[2].setTarget(tX * walkSteps[stepB][0], (tY + rotOffset) * walkSteps[stepB][0], walkSteps[stepB][1], walkSpeed);
+        legs[5].setTarget(tX * walkSteps[stepB][0], (tY + rotOffset) * walkSteps[stepB][0], walkSteps[stepB][1], walkSpeed);
+        /*
         if (i % 2 == 0) // Group A
           legs[i].setTarget(tX * walkSteps[stepA][0], (tY + rotOffset) * walkSteps[stepA][0], walkSteps[stepA][1], walkSpeed);
         else            // Group B
           legs[i].setTarget(tX * walkSteps[stepB][0], (tY + rotOffset) * walkSteps[stepB][0], walkSteps[stepB][1], walkSpeed);
+        */
       }
     }
   }
