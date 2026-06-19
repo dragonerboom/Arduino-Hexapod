@@ -5,12 +5,12 @@
 #include <Adafruit_PWMServoDriver.h>
 
 // ########################################## PHYSICAL CONSTANTS
-const double L_COXA  = 57.0;  // J1L
-const double L_FEMUR = 110.0; // J2L
-const double L_TIBIA = 110.0; // J3L
+const double L_COXA  = 56.8;  // J1L
+const double L_FEMUR = 45.0; // J2L
+const double L_TIBIA = 67.5; // J3L
 
-const double Y_REST = 80.0;   // Neutral distance from body
-const double Z_REST = -90.0;  // Standing height
+const double Y_REST = 90.0;   // Neutral distance from body
+const double Z_REST = -50.0;  // Standing height
 const int ServoMin = 500;
 const int ServoMax = 2000;
 
@@ -127,7 +127,7 @@ const double walkSteps[13][2] = {
 bool allStationary;
 uint8_t stepA = 0, stepB = 6;
 uint32_t walkSpeed = 80;
-
+int strideLength = 10;
 // User Input Variables
 double stickMag = 0.0; 
 double stickAngle = 0.0; // 0 = Forward, 180 = Backward
@@ -162,8 +162,8 @@ void loop() {
       stepB = (stepB >= 12) ? 0 : stepB + 1;
 
       double rad = stickAngle * (PI / 180.0);
-      double tX = stickMag * cos(rad);
-      double tY = stickMag * sin(rad);
+      double tX = stickMag * cos(rad) * strideLength;
+      double tY = stickMag * sin(rad) * strideLength;
 
       for (int i = 0; i < 6; i++) {
         // Simple rotation: Add offset to Y based on rotation variable
